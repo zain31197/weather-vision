@@ -1,4 +1,4 @@
-const apiKey = "5eaff941d04fdb5e602395fcf3de857c";
+const apiKey = "YourApiKey";
 const forecastOutput = document.getElementById("forecast-output");
 
 function getQueryParam(param) {
