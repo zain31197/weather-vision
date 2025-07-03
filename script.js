@@ -48,12 +48,12 @@ function showfivedayforecast(event) {
     circle.style.left = `${event.clientX - button.getBoundingClientRect().left - radius}px`;
     circle.style.top = `${event.clientY - button.getBoundingClientRect().top - radius}px`;
     circle.classList.add("ripple");
-    // Remove old ripple if exists
+    
     const oldRipple = button.querySelector('.ripple');
     if (oldRipple) oldRipple.remove();
     button.appendChild(circle);
 
-    // Open forecast page in new tab with city as query param
+    
     const city = document.getElementById("city").value.trim();
     if (city === "") {
         output.textContent = "Please enter a city name";
@@ -61,6 +61,6 @@ function showfivedayforecast(event) {
     }
     setTimeout(() => {
         window.open(`forecast.html?city=${encodeURIComponent(city)}`, '_blank');
-    }, 350); // Let ripple play
+    }, 350); 
 }
 
