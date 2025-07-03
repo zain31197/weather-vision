@@ -1,4 +1,4 @@
-const apiKey = "5eaff941d04fdb5e602395fcf3de857c";
+const apiKey = "YourApiKey";
 const output = document.getElementById("weather-output");
 const nextDays = document.getElementById("next-days");
 
