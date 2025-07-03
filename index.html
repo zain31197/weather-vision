@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2601.svg" alt="Cloud Icon" class="header-icon">
+      <h1>Weather App</h1>
+    </div>
+  </header>
+
+  <div class="weather-container">
+    <input type="text" id="city" placeholder="Enter city name" />
+    <button onclick="getWeather()">Get Weather</button>
+    <div id="weather-output" class="weather-output">
+      <!-- Example icon and text, to be replaced by JS -->
+      <!-- <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon" class="weather-icon"> -->
+      <!-- <span>25°C, Clear Sky</span> -->
+       
+    </div>
+  </div>
+  <button id="next-days" onclick="showfivedayforecast(event)">Show 5-Day Forecast</button>
+
+  <footer>
+    <span>Weather App &copy; 2024 | Powered by OpenWeatherMap</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
